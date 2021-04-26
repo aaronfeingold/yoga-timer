@@ -15,7 +15,7 @@ export const toggleTimer = (index) => {
 }
 
 export const SELECT_TIMER = 'SELECT_TIMER'
-export selectTimer = (index) => {
+export const selectTimer = (index) => {
   return {
     type: SELECT_TIMER,
     payload: { index }
