@@ -1,8 +1,8 @@
 import { NEW_TIMER, TOGGLE_TIMER } from '../actions';
 import Timer from '../Timer';
 
-const timersReducer = (state = [], aciton) => {
-  switch (aciton.type) {
+const timersReducer = (state = [], action) => {
+  switch (action.type) {
     case NEW_TIMER:
       // adds a new timer and returns copy of state
       const name = action.payload.name ? action.payload.name : `Timer ${state.length}`
